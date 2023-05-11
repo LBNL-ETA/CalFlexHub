@@ -16,8 +16,9 @@ The steps to receive prices from MIDAS are as follows:
 1. To clone this repository and use the code:
   ``` git clone https://github.com/LBNL-ETA/CalFlexHub.git ```
 
-2. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_
-3. This process should create a file named _credentials.yaml_
+2. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_ 
+    - Code in this file is based on the Registration script in the [MIDAS python repository]([url](https://github.com/morganmshep/MIDAS-Python-Repository/tree/main))
+4. This process should create a file named _midas_config.yaml_
 5. The file _ReceivingPrices-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
     - Partner's can copy and integrate this code into their own existing solutions to create a 'price client'
 
