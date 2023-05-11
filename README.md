@@ -9,7 +9,7 @@ energy load for the State of California and beyond. More information can be foun
 # How to use this repository
 
 CalFlexHub has made a set of fictitious, prototype research price profiles available
-through the CEC's Market Informed Demand Automation Server [(MIDAS)]([url](https://www.energy.ca.gov/proceedings/energy-commission-proceedings/load-management-rulemaking/market-informed-demand)).
+through the CEC's Market Informed Demand Automation Server [(MIDAS)](https://www.energy.ca.gov/proceedings/energy-commission-proceedings/load-management-rulemaking/market-informed-demand).
 To support affiliates, a jupyter notebook showing how to receive prices (_ReceivingPrices-midas.ipynb_) has been provided.
 The steps to receive prices from MIDAS are as follows:
 
@@ -17,7 +17,7 @@ The steps to receive prices from MIDAS are as follows:
   ``` git clone https://github.com/LBNL-ETA/CalFlexHub.git ```
 
 2. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_ 
-    - Code in this file is based on the Registration script in the [MIDAS python repository]([url](https://github.com/morganmshep/MIDAS-Python-Repository/tree/main))
+    - Code in this file is based on the Registration script in the [MIDAS python repository](https://github.com/morganmshep/MIDAS-Python-Repository/tree/main)
 4. This process should create a file named _midas_config.yaml_
 5. The file _ReceivingPrices-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
     - Partner's can copy and integrate this code into their own existing solutions to create a 'price client'
