@@ -6,7 +6,20 @@ CalFlexHub seeks to advance the capability of smart building technologies to pro
 energy load for the State of California and beyond. More information can be found 
 [here](https://calflexhub.lbl.gov/).
 
+# How to use this repository
 
+CalFlexHub has made a set of fictitious, prototype research price profiles available
+through the CEC's Market Informed Demand Automation Server [(MIDAS)]([url](https://www.energy.ca.gov/proceedings/energy-commission-proceedings/load-management-rulemaking/market-informed-demand)).
+To support affiliates, a jupyter notebook showing how to receive prices (_ReceivingPrices-midas.ipynb_) has been provided.
+The steps to receive prices from MIDAS are as follows:
+
+1. To clone this repository and use the code:
+  ``` git clone https://github.com/LBNL-ETA/CalFlexHub.git ```
+
+2. Users must set up credentials to use MIDAS. This can be accomplished using the _registration-midas.ipynb_
+3. This process should create a file named _credentials.yaml_
+5. The file _ReceivingPrice-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
+    - Partner's can copy and integrate this code into their own existing solutions to create a 'price client'
 
 ## Copyright
 California Load Flexibility Research and Development Hub (CalFlexhub)
