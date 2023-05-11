@@ -18,7 +18,7 @@ The steps to receive prices from MIDAS are as follows:
 
 2. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_
 3. This process should create a file named _credentials.yaml_
-5. The file _ReceivingPrice-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
+5. The file _ReceivingPrices-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
     - Partner's can copy and integrate this code into their own existing solutions to create a 'price client'
 
 ## Copyright
