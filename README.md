@@ -6,29 +6,37 @@ CalFlexHub seeks to advance the capability of smart building technologies to pro
 energy load for the State of California and beyond. More information can be found 
 [here](https://calflexhub.lbl.gov/).
 
-## How to use this repository
+## How to use the CalFlexHub Price Reception Tool? 
 
 CalFlexHub has made a set of fictitious, prototype research price profiles available
 through the CEC's Market Informed Demand Automation Server [(MIDAS)](https://www.energy.ca.gov/proceedings/energy-commission-proceedings/load-management-rulemaking/market-informed-demand).
 To support affiliates, a jupyter notebook showing how to receive prices (_ReceivingPrices-midas.ipynb_) has been provided.
 The steps to receive prices from MIDAS are as follows:
 
-1. To clone this repository and use the code:
-  ``` git clone https://github.com/LBNL-ETA/CalFlexHub.git ```
+1. To clone this repository:
+``` 
+git clone https://github.com/LBNL-ETA/CalFlexHub.git 
+```
+  
 2. This repository contains code written in Python3
   and Jupyter notebooks. While [Python3](https://www.python.org/downloads/)
   and [Jupyter notebook](https://jupyter.org/install) interactive environment
   can be installed separately, we recommend setting them up
   using the [anaconda](https://www.anaconda.com/download) platform. 
+  
 3. Once they have been install, install dependencies using the provided
   ``requirements.txt`` file and ``pip``:
-  
-      ``pip install -r requirements.txt``
-  
-4. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_ 
+```
+pip install -r requirements.txt
+```
+4. To use the Price Reception Tool, navigate to the corresponding folder: 
+```
+cd CalFlexHub_Price_Reception_Tool
+```
+5. Users must set up credentials to use MIDAS. This can be accomplished using the file _registration-midas.ipynb_ 
     - Code in this file is based on the Registration script in the [MIDAS python repository](https://github.com/morganmshep/MIDAS-Python-Repository/tree/main)
-5. This process should create a file named _midas_config.yaml_
-6. The file _ReceivingPrices-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
+6. This process should create a file named _midas_config.yaml_
+7. The file _ReceivingPrices-midas.ipynb_ will use these credentials to pull prices from MIDAS. 
     - Partner's can copy and integrate this code into their own existing solutions to create a 'price client'
 
 ## Copyright
